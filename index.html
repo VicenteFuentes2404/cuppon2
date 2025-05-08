@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CUPPON</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">     <!--componentes de bootstrap para botones, iconos y demás-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+          
+    </head>
+
+    <body>
+
+      <header>
+        <nav class="navbar navbar-expand-lg"> <!--expand-lg hace que se expanda horizontalmente en pant grandes y vertical en telef-->
+          <div class="container custom-navbar"> <!--container centraliza y le da ancho max a todo el contenido-->
+            <a class="navbar-brand fw-bold" href="#">CUPPON</a> <!--fw.bol texto en negrita-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <div class="navbar-nav">
+                <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                <a class="nav-link text-white" href="#">Features</a>
+                <a class="nav-link text-white" href="#">Pricing</a>
+                <a class="nav-link text-white" href="#">Disabled</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!--componente carousel de bootstrap-->
+      <main>
+        <section class="container my-5"> <!--container para centrar el contenido horiz y my-5 para separa de otros contenidos-->
+            <div class="row"> <!--row para organizar el contenido en filas-->
+              <div class="col-md-6"> <!--se dividen las filas en dos column iguales-->
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/img/360_F_1032805167_hE9QqHNzWnIHFlrkU6WiGIYCc87xnjRW.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/tratamientos-mejorar-sonrisa-clinica-abad-1080x675.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/visita-dentista-e1436709580466.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/beneficios-limpieza-dental.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+              </div>
+              <div class="col-md-6">
+                <h2 class="fw-bold">Evaluación integral + blanqueamiento dental led + limpieza + fluoración, Blanco Encalada.</h2> <!--fw-bold para texto en negrita-->
+                <p><i class="bi bi-geo-alt-fill text-primary"></i> 4.5 km, Blanco Encalada</p> <!-- bi bi-geo para insertar el pin de ubicación desde los icons de bootstrap-->
+                <h3 class="text-danger fw-bold">$25.990 <small class="text-muted text-decoration-line-through">$300.000</small> <span class="badge bg-primary">91%</span></h3> <!--text-danger para dar color rojo, text-muted para el color gris, decoration-line-through marca el precio anterior y badge bg-primary es la etiqueta de descuento-->
+                <button class="btn btn-warning w-100 mb-3 fw-bold">¡COMPRAR YA!</button> <!--se usan botones de bootstrap, w-110 para el ancho, mb-3 da el margen inferior-->
+                <button class="btn btn-outline-secondary w-100 mb-3">AÑADIR AL CARRO</button>
+          
+                <div class="p-3 bg-light border rounded"> <!--creamos la zona de regalo, p-3 para padding, bg-light fondo gris, border para dar borde y rounden para redondear las esquinas-->
+                  <h5 class="text-success">Regala esta Experiencia</h5>
+                  <ol> <!--con ol creamos una lista ordenada -->
+                    <li>Agrega al carrito la oferta</li>
+                    <li>Presiona "comprar como regalo" y paga</li>
+                    <li>Personaliza el correo del regalo</li>
+                    <!-- con li definimos puntos dentro de una lista-->
+                  </ol>
+                  <button class="btn btn-success w-100">REGALAR</button>  <!--botón verde de bootstrap-->
+                </div>
+          
+                <div class="mt-3">
+                    <p>
+                        <i class="fas fa-star text-warning"></i>  <!-- estrellas sacadas de awesome fonts-->
+                        <i class="fas fa-star text-warning"></i>  <!-- fas para estrella llena-->
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>  <!-- far para vacía-->
+                        (11 Valoraciones) 
+                      </p>                     
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        </section>
+          <div class="container mt-5 mb-5">
+            <div class="row border p-4 bg-light">
+              <div class="col-md-6">
+                <h5 class="text-primary fw-bold">Resumen</h5>
+                <p><strong>Clínica Odontológica.</strong></p>
+                <ul>
+                  <li>En Clínica Odontológica La Portada nos preocupamos de que todos nuestros pacientes tengan claro los tratamientos que se van a realizar...</li>
+                </ul>
+          
+                <h5 class="text-primary fw-bold">Incluye</h5>
+                <ul>
+                  <li>Evaluación dental inicial</li>
+                  <li>1 sesión de limpieza dental completa (ultrasonido y profilaxis)</li>
+                  <li>Blanqueamiento dental LED (con dos aplicaciones de peróxido de hidrógeno)</li>
+                  <li>Aplicación de flúor</li>
+                </ul>
+          
+                <h5 class="text-primary fw-bold">Características</h5>
+                <p><strong>Evaluación Dental:</strong></p>
+                <ul>
+                  <li> Se realiza una revisión clínica para diagnosticar el estado general de salud bucal, identificar presencia de caries, enfermedades periodontales o cualquier otro problema que deba tratarse previamente.</li>
+                </ul>
+                <p><strong>Limpieza dental:</strong></p>
+                <ul>
+                  <li>El destartraje y pulido coronal permite la remoción del sarro y tinciones...</li>
+                  <li>La profilaxis o pulido es un procedimiento odontológico...</li>
+                </ul>
+                <p><strong>Blanqueamiento LED:</strong></p>
+                <ul>
+                  <li>Con dos aplicaciones supervisadas por un profesional...</li>
+                </ul>
+                <p><strong>Aplicación de flúor</strong></p>
+                <ul>
+                  <li>Tratamiento preventivo que fortalece el esmalte dental y ayuda a prevenir la aparición de caries. Es especialmente recomendado tras la limpieza profesional para potenciar su efecto protector.</li>
+                </ul>
+              </div>
+          
+              <div class="col-md-6">
+                <h5 class="text-primary fw-bold">Reglas Claras</h5>
+                <ul>
+                  <li>Al agendar tu cita consulta las indicaciones previas...</li>
+                  <li>Servicio válido para: mayores de 18 años</li>
+                  <li>Se acepta un reagendamiento por cita o sesión</li>
+                  <li>Esta es una promoción tipo servicio, no sujeta a retracto</li>
+                  <li>Compra válida por: Evaluación integral + blanqueamiento dental led + limpieza + fluoración</li>
+                  <li>Tiempo máximo de atraso: 10 minutos</li>
+                  <li>Horario de atención: Lunes a Viernes de 10:00 a 13:00 - 14:00 a 18:00</li>
+                  <li>Reserva al teléfono: +56 984141973 y 232518759</li>
+                  <li>Cuenta con estacionamiento (sujeto a disponibilidad)</li>
+                  <li>El cupón es válido para una persona, no acumulable</li>
+                  <li>Correo de reservas: contacto@odontologialaportada.cl</li>
+                  <li>No apto para pacientes con enfermedad periodontal...</li>
+                  <li>Revisa nuestras <a href="#">condiciones generales</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>

@@ -1,0 +1,41 @@
+.custom-navbar {
+    background-color: #009400;
+    padding-top: 12px;
+    padding-bottom: 12px; /*agregar espacios vertical arriba y abajo */
+  }
+  
+.navbar-brand{      /*cuppon*/
+    color: white;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+   
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.466) !important; /* con !important le damos max prioridad a un estilo    */
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .navbar .nav-link:hover, /*el hover hace que las opciones brillen al pasar el mouse por encima  */
+  .navbar .nav-link.active {
+    color: #f8f9fa !important; 
+    font-family: "Roboto", sans-serif;
+  }
+
+
+  .carousel-item img {
+    width: 100%;
+    height: 500px; /*obligamos a las imagenes del carrusel a tener el mismo tamaño*/
+    object-fit: cover;
+  }
+
+  
+  
+
+
+
+
+
+  
